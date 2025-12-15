@@ -41,12 +41,10 @@
         }
 
         header p {
-            margin-top: 1rem;
             color: var(--muted);
             font-size: 1.1rem;
             max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: auto;
         }
 
         section {
@@ -82,7 +80,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 3rem;
-            align-items: center;
+            align-items: flex-start;
         }
 
         .product h2 {
@@ -121,8 +119,9 @@
 
         .shop-btn {
             display: inline-block;
+            margin: auto;
             margin-top: 1.5rem;
-            padding: 0.8rem 1.6rem;
+            padding: 0.8rem 5rem;
             border-radius: 999px;
             background: var(--accent);
             color: #000;
@@ -130,6 +129,7 @@
             font-weight: 600;
             transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
             text-align: center;
+            
         }
 
         .shop-btn:hover {
@@ -137,13 +137,40 @@
             box-shadow: 0 8px 20px rgba(77, 163, 255, 0.4);
             opacity: 0.95;
         }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+        .picture-container{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            grid-column: 2;
+        }
+
+        .logo-container img {
+            height: 20vh;
+            margin-top: -5.5vh;
+            margin-right: -2vh;
+            margin-bottom: -2.5vh;
+        }
+        .picture2{
+            height: auto;
+            max-width: 100%;
+            margin-top: -23vh;
+            margin-bottom: -5vh;
+        }
     </style>
 </head>
 
 <body>
 
     <header>
-        <h1>Echo AG</h1>
+        <div class="logo-container">
+            <img src="Images/image-removebg-preview.png" alt="Echo AG Logo" /> ©
+        </div>
         <p>Precision audio equipment for professionals who demand honesty, clarity, and control.</p>
     </header>
 
@@ -162,6 +189,7 @@
                 <li>• Low distortion across the entire spectrum</li>
                 <li>• Tuned for long, fatigue-free studio sessions</li>
             </ul>
+            <a href="#" class="shop-btn">Shop Now</a>
         </div>
         <div class="card">
             <h3>"Hear the mix, not the hype."</h3>
@@ -170,7 +198,11 @@
                 Every decision you make translates reliably to other systems.
             </p>
         </div>
-        <a href="#" class="shop-btn">Shop Now</a>
+        
+        <div class="picture-container">
+            <img class="picture2" src="Images/Headphones.png" />
+        </div>
+        
     </section>
 
     <section>
