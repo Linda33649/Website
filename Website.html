@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Echo AG – ECHO Studio One Studio Headphones</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f1115;
+            --fg: #e6e6e6;
+            --muted: #a0a6b1;
+            --accent: #4da3ff;
+            --card: #181b22;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: radial-gradient(circle at top, #1a2030, var(--bg));
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+        }
+
+        header p {
+            margin-top: 1rem;
+            color: var(--muted);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .product {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .product h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .product ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .product li {
+            margin-bottom: 0.6rem;
+            color: var(--muted);
+        }
+
+        .highlight {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        footer {
+            padding: 2rem;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9rem;
+            border-top: 1px solid #222;
+        }
+
+        @media (max-width: 800px) {
+            .product {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .shop-btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.8rem 1.6rem;
+            border-radius: 999px;
+            background: var(--accent);
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+            text-align: center;
+        }
+
+        .shop-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(77, 163, 255, 0.4);
+            opacity: 0.95;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Echo AG</h1>
+        <p>Precision audio equipment for professionals who demand honesty, clarity, and control.</p>
+    </header>
+
+    <section class="product">
+        <div>
+            <h2>ECHO <span class="highlight">Studio One</span></h2>
+            <p>
+                ECHO Studio One is a reference-grade studio headphone designed for music producers, audio engineers, and
+                composers.
+                Its sound signature is intentionally neutral, revealing detail without coloration — so you hear the mix
+                as it truly is.
+            </p>
+            <ul>
+                <li>• Linear frequency response for accurate mixing</li>
+                <li>• Open-back design for natural stereo imaging</li>
+                <li>• Low distortion across the entire spectrum</li>
+                <li>• Tuned for long, fatigue-free studio sessions</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>"Hear the mix, not the hype."</h3>
+            <p>
+                Studio One removes unnecessary enhancements and artificial bass boosts.
+                Every decision you make translates reliably to other systems.
+            </p>
+        </div>
+        <a href="#" class="shop-btn">Shop Now</a>
+    </section>
+
+    <section>
+        <div class="grid">
+            <div class="card">
+                <h3>Built for Accuracy</h3>
+                <p>
+                    Each unit is measured and matched to ensure consistent left-right balance and phase coherence.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Designed by Engineers</h3>
+                <p>
+                    Developed in collaboration with producers and mastering engineers who rely on truth, not coloration.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Echo AG Philosophy</h3>
+                <p>
+                    At Echo AG, we believe professional audio tools should disappear — leaving only sound and intention.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Echo AG · Studio Reference Audio
+        <br>
+        Disclaimer: This is a school project and not a real product.
+    </footer>
+
+    <script>
+        // Simple example JS interaction
+        console.log("ECHO Studio One loaded – precision matters.");
+    </script>
+
+</body>
+
+</html>
